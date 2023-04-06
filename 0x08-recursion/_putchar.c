@@ -11,5 +11,3 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
-Footer
-© 2023 GitHub
