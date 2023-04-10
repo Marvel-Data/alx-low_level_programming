@@ -1,16 +1,32 @@
 #include "main.h"
 
 /**
- * _isupper - check the code for uppercase.
- *
- * @c: is an integer param
- *
- * Return: Always 0.
+ * *_strcat - function commute srtings
+ * @dest: param pointer to a char
+ * @src: param pointer to a char
+ * Return: return value of dest
  */
 
-
-int _isupper(int c)
+char *_strcat(char *dest, char *src)
 {
+	int i;
+	int j;
 
-	return (c >= 65 && c <= 90);
+	i = 0;
+	j = 0;
+
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		j++;
+		i++;
+	}
+
+	dest[i] = '\0';
+	return (dest);
 }
