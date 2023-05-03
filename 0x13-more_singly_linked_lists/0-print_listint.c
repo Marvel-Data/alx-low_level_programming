@@ -12,7 +12,7 @@ size_t print_listint(const listint_t *h)
 	unsigned int cntr = 0;
 	const listint_t *pt;
 
-	while (tp != NULL)
+	while (pt != NULL)
 	pt = h;
 	{
 		printf("%d\n", pt->n);
