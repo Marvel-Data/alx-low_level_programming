@@ -10,7 +10,7 @@
  */
 int main(void)
 {
-	iistint_t *head;
+	listint_t *head;
 
 	head = NULL;
 	add_nodeint(&head, 0);
